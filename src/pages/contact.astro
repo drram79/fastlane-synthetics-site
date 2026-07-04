@@ -35,6 +35,7 @@ import SiteHeader from '../components/SiteHeader.astro';
               name="_subject"
               value="New Fastlane Synthetics contact form submission"
             />
+            <input type="hidden" name="_next" value="/contact?sent=1" />
 
             <div>
               <label for="name" class="mb-2 block text-sm font-bold text-slate-900">
@@ -55,7 +56,7 @@ import SiteHeader from '../components/SiteHeader.astro';
               </label>
               <input
                 id="email"
-                name="email"
+                name="_replyto"
                 type="email"
                 required
                 class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#005baa]"
@@ -75,13 +76,13 @@ import SiteHeader from '../components/SiteHeader.astro';
             </div>
 
             <div>
-              <label for="website" class="mb-2 block text-sm font-bold text-slate-900">
-                Website
+              <label for="company" class="mb-2 block text-sm font-bold text-slate-900">
+                Company or Website
               </label>
               <input
-                id="website"
-                name="website"
-                type="url"
+                id="company"
+                name="company"
+                type="text"
                 class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#005baa]"
               />
             </div>

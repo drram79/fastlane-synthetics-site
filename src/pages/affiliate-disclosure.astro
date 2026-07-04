@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+---
+
+<Layout
+  title="Affiliate Disclosure | Fastlane Synthetics"
+  description="Affiliate disclosure for Fastlane Synthetics and our relationship with AMSOIL."
+>
+  <main class="min-h-screen bg-white text-slate-900">
+    <SiteHeader currentPath="/Disclosure" />
+
+    <section class="bg-white">
+      <div class="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20">
+        <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#005baa]">
+          Affiliate Disclosure
+        </p>
+
+        <h1 class="mt-4 text-4xl font-black leading-tight text-slate-900 md:text-6xl">
+          Affiliate Disclosure
+        </h1>
+
+        <div class="mt-10 space-y-10">
+          <div>
+            <p class="text-lg leading-8 text-slate-600">
+              Fastlane Synthetics is an independent authorized dealer of AMSOIL products. When you click product links on this website and make a purchase through amsoil.com, we earn a commission at no additional cost to you. This includes links to AMSOIL products, Preferred Customer signups, and dealer registrations.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-black text-slate-900">
+              Editorial Independence
+            </h2>
+            <p class="mt-4 text-lg leading-8 text-slate-600">
+              This relationship does not influence our product recommendations or editorial content. We recommend AMSOIL products based on product fit, practical application, and the technical information published by AMSOIL.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-black text-slate-900">
+              How Our Links Work
+            </h2>
+            <p class="mt-4 text-lg leading-8 text-slate-600">
+              Our product links contain a dealer referral number that identifies Fastlane Synthetics as the referring dealer. This is part of AMSOIL’s independent dealer model, where dealers provide education, guidance, and support while AMSOIL handles fulfillment and shipping.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-black text-slate-900">
+              Questions?
+            </h2>
+            <p class="mt-4 text-lg leading-8 text-slate-600">
+              If you have questions about our relationship with AMSOIL or about any product recommendation on this site, please
+               <a href="/contact" class="font-semibold text-red-600 hover:text-red-700 hover:underline"> contact us</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#07142b] text-white">
+      <div class="mx-auto max-w-7xl px-6 py-16 md:px-10">
+        <div class="grid gap-10 md:grid-cols-4">
+          <div class="md:col-span-2">
+            <img
+              src="/logo.jpg"
+              alt="Fastlane Synthetics logo"
+              class="h-16 w-auto object-contain"
+            />
+            <h3 class="mt-6 text-2xl font-black">
+              Ready to upgrade to AMSOIL?
+            </h3>
+            <p class="mt-4 max-w-xl leading-8 text-slate-300">
+              Get practical product guidance and a straightforward path to ordering the right AMSOIL
+              products for your vehicle, motorcycle, or equipment.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-black">Fastlane Synthetics</h4>
+            <p class="mt-4 leading-8 text-slate-300">
+              Your trusted independent AMSOIL dealer serving customers with clear product guidance
+              and support.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-black">Quick Links</h4>
+            <div class="mt-4 flex flex-col gap-3 text-slate-300">
+              <a href="/" class="transition hover:text-white">Home</a>
+              <a href="/about" class="transition hover:text-white">About</a>
+              <a href="/how-to-order" class="transition hover:text-white">How to Order</a>
+              <a href="/articles" class="transition hover:text-white">Articles</a>
+              <a href="/contact" class="transition hover:text-white">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-white/10 pt-6 text-sm text-slate-400">
+          © 2026 Fastlane Synthetics. Independent AMSOIL Dealer.
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

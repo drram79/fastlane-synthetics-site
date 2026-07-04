@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+---
+
+
+<Layout
+  title="Articles | Fastlane Synthetics"
+  description="Helpful AMSOIL articles, product guidance, and maintenance information from Fastlane Synthetics."
+>
+  <main class="min-h-screen bg-white text-slate-900">
+    <SiteHeader currentPath="/articles" />
+
+    <section class="relative overflow-hidden bg-slate-900">
+      <img
+        src="/amsoilbackgroundarticles.png"
+        alt="AMSOIL articles background"
+        class="absolute inset-0 h-full w-full object-cover object-[center_55%] opacity-75"
+      />
+      <div class="absolute inset-0 bg-slate-950/35"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+        <div class="max-w-4xl">
+
+          <h1 class="mt-4 text-4xl font-black leading-tight text-white md:text-6xl">
+            AMSOIL guidance, maintenance insights, and product education.
+          </h1>
+
+          <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
+            Explore helpful articles designed to make it easier to choose the right AMSOIL products
+            and understand maintenance topics with more confidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-16 md:px-10">
+        <div class="max-w-3xl">
+         
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <p class="text-sm font-bold uppercase tracking-[0.22em] text-[#005baa]">
+              Product Guides
+            </p>
+            <h3 class="mt-4 text-2xl font-black text-slate-900">
+              How to choose the right AMSOIL product
+            </h3>
+            <p class="mt-4 leading-8 text-slate-600">
+              Learn how to narrow down the correct oil, filter, or fluid based on application, use,
+              and vehicle or equipment type.
+            </p>
+            <a href="/how-to-order" class="mt-6 inline-flex text-sm font-bold text-[#ef1c25] transition hover:underline">
+             Article Coming Soon...
+            </a>
+          </article>
+
+          <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <p class="text-sm font-bold uppercase tracking-[0.22em] text-[#005baa]">
+              Maintenance Tips
+            </p>
+            <h3 class="mt-4 text-2xl font-black text-slate-900">
+              Articles being added soon!
+            </h3>
+            <p class="mt-4 leading-8 text-slate-600">
+              Understand the basics of intervals, filter selection, and product fit so routine maintenance
+              feels more straightforward.
+            </p>
+          </article>
+
+          <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <p class="text-sm font-bold uppercase tracking-[0.22em] text-[#005baa]">
+              Preferred Customer
+            </p>
+            <h3 class="mt-4 text-2xl font-black text-slate-900">
+              When the Preferred Customer option makes sense
+            </h3>
+            <p class="mt-4 leading-8 text-slate-600">
+              See when the Preferred Customer program may be useful for repeat buyers who want ongoing savings.
+            </p>
+            <a
+              href="https://www.amsoil.com/offers/pc/?zo=5039461"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 inline-flex text-sm font-bold text-[#ef1c25] transition hover:underline"
+            >
+              Learn more
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="relative overflow-hidden bg-slate-950">
+      <div class="absolute inset-0 bg-slate-950/80"></div>
+
+      <div class="relative mx-auto max-w-7xl px-6 py-14 md:px-10 md:py-16">
+        <div class="max-w-3xl">
+          <p class="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-cyan-300">
+            Need Help Now?
+          </p>
+          <h2 class="text-3xl font-black text-white md:text-5xl">
+            Looking for product guidance right away?
+          </h2>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-200">
+            Go straight to the ordering page or get in touch if you want help narrowing down the right AMSOIL product.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="/how-to-order"
+              class="inline-flex items-center justify-center rounded-xl bg-[#ef1c25] px-8 py-4 text-base font-bold text-white transition hover:bg-[#d8151d]"
+            >
+              How to Order
+            </a>
+
+            <a
+              href="/contact"
+              class="inline-flex items-center justify-center rounded-xl border border-white/20 px-8 py-4 text-base font-bold text-white transition hover:bg-white/10"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

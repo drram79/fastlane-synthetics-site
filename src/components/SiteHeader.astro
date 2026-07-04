@@ -1,0 +1,63 @@
+---
+const { currentPath = "/" } = Astro.props;
+
+const navLinkClass = (href) =>
+  currentPath === href
+    ? "text-2xl font-semibold tracking-wide text-[#005baa]"
+    : "text-2xl font-semibold tracking-wide text-slate-700 transition hover:text-[#005baa]";
+---
+
+<div class="bg-[#07142b] text-white">
+  <div class="mx-auto flex max-w-7xl items-center justify-center px-6 py-3 md:px-10">
+    <div class="flex items-center gap-3">
+      <img
+        src="/amsoil-logo.png"
+        alt="AMSOIL logo"
+        class="h-10 w-auto object-contain"
+      />
+      <span class="text-sm font-bold uppercase tracking-[0.18em] text-white md:text-base">
+        Authorized Dealer
+      </span>
+    </div>
+  </div>
+</div>
+
+<a
+  href="https://www.amsoil.com/offers/pc/?zo=5039461"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="block bg-[#005baa] px-4 py-2 text-center transition hover:bg-[#004a8c]"
+>
+  <p class="text-sm font-semibold text-white">
+    Free shipping on orders more than $100. Save up to 25% as a Preferred Customer.
+  </p>
+</a>
+
+<header class="sticky top-0 z-30 border-b border-slate-100/50 bg-white/50 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-0 md:px-10">
+    <a href="/" class="flex items-center">
+      <img
+        src="/logo.jpg"
+        alt="Fastlane Synthetics logo"
+        class="h-50 w-auto object-contain"
+      />
+    </a>
+
+    <nav class="hidden items-center gap-8 md:flex">
+      <a href="/" class={navLinkClass("/")} aria-current={currentPath === "/" ? "page" : undefined}>Home</a>
+      <a href="/about" class={navLinkClass("/about")} aria-current={currentPath === "/about" ? "page" : undefined}>About</a>
+      <a href="/how-to-order" class={navLinkClass("/how-to-order")} aria-current={currentPath === "/how-to-order" ? "page" : undefined}>How to Order</a>
+      <a href="/articles" class={navLinkClass("/articles")} aria-current={currentPath === "/articles" ? "page" : undefined}>Articles</a>
+      <a href="/contact" class={navLinkClass("/contact")} aria-current={currentPath === "/contact" ? "page" : undefined}>Contact</a>
+    </nav>
+
+    <a
+      href="https://www.amsoil.com/offers/pc/?zo=5039461"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center justify-center rounded-2xl bg-[#005baa] px-10 py-5 text-2xl font-bold text-white transition hover:bg-[#004a8c]"
+    >
+      Save Up to 25%
+    </a>
+  </div>
+</header>

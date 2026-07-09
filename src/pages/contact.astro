@@ -11,7 +11,7 @@ import SiteHeader from '../components/SiteHeader.astro';
     <SiteHeader currentPath="/contact" />
 
     <section class="bg-white">
-      <div class="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+      <div class="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20">
         <div class="max-w-3xl">
           <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#005baa]">
             Contact Us
@@ -20,7 +20,8 @@ import SiteHeader from '../components/SiteHeader.astro';
             Have questions?
           </h1>
           <p class="mt-5 text-lg leading-8 text-slate-600">
-            Let us know how we can help.
+            Let us know how we can help with AMSOIL products, ordering, synthetic lubricants,
+            or general support.
           </p>
         </div>
 
@@ -28,13 +29,9 @@ import SiteHeader from '../components/SiteHeader.astro';
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
-            class="grid gap-6 md:grid-cols-2"
+            class="grid gap-6 rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm md:grid-cols-2"
           >
-            <input
-              type="hidden"
-              name="access_key"
-              value="c0fab517-e35c-4a09-9cdc-e825ff12457c"
-            />
+            <input type="hidden" name="access_key" value="c0fab517-e35c-4a09-9cdc-e825ff12457c" />
             <input
               type="hidden"
               name="subject"
@@ -60,9 +57,7 @@ import SiteHeader from '../components/SiteHeader.astro';
             />
 
             <div>
-              <label for="name" class="mb-2 block text-sm font-bold text-slate-900">
-                Name *
-              </label>
+              <label for="name" class="mb-2 block text-sm font-bold text-slate-900">Name</label>
               <input
                 id="name"
                 name="name"
@@ -73,9 +68,7 @@ import SiteHeader from '../components/SiteHeader.astro';
             </div>
 
             <div>
-              <label for="email" class="mb-2 block text-sm font-bold text-slate-900">
-                Email *
-              </label>
+              <label for="email" class="mb-2 block text-sm font-bold text-slate-900">Email</label>
               <input
                 id="email"
                 name="email"
@@ -85,33 +78,9 @@ import SiteHeader from '../components/SiteHeader.astro';
               />
             </div>
 
-            <div>
-              <label for="phone" class="mb-2 block text-sm font-bold text-slate-900">
-                Phone
-              </label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#005baa]"
-              />
-            </div>
-
-            <div>
-              <label for="company" class="mb-2 block text-sm font-bold text-slate-900">
-                Company or Website
-              </label>
-              <input
-                id="company"
-                name="company"
-                type="text"
-                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#005baa]"
-              />
-            </div>
-
             <div class="md:col-span-2">
               <label for="message" class="mb-2 block text-sm font-bold text-slate-900">
-                Message *
+                Message
               </label>
               <textarea
                 id="message"
@@ -131,68 +100,6 @@ import SiteHeader from '../components/SiteHeader.astro';
               </button>
             </div>
           </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-[#07142b] text-white">
-      <div class="mx-auto max-w-7xl px-6 py-16 md:px-10">
-        <div class="grid gap-10 md:grid-cols-4">
-          <div class="md:col-span-2">
-            <img
-              src="/logo.jpg"
-              alt="Fastlane Synthetics logo"
-              class="h-16 w-auto object-contain"
-            />
-
-            <h3 class="mt-6 text-2xl font-black">
-              Ready to upgrade to AMSOIL?
-            </h3>
-
-            <p class="mt-4 max-w-xl leading-8 text-slate-300">
-              Get practical product guidance and a straightforward path to ordering the right AMSOIL
-              products for your vehicle, motorcycle, or equipment.
-            </p>
-
-            <div class="mt-6 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="/how-to-order"
-                class="inline-flex items-center justify-center rounded-xl bg-[#ef1c25] px-6 py-4 text-base font-bold text-white transition hover:bg-[#d8151d]"
-              >
-                Shop AMSOIL
-              </a>
-
-              <a
-                href="/contact"
-                class="inline-flex items-center justify-center rounded-xl border border-white/20 px-6 py-4 text-base font-bold text-white transition hover:bg-white/10"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h4 class="text-lg font-black">Fastlane Synthetics</h4>
-            <p class="mt-4 leading-8 text-slate-300">
-              Your trusted independent AMSOIL dealer serving customers with clear product guidance
-              and support.
-            </p>
-          </div>
-
-          <div>
-            <h4 class="text-lg font-black">Quick Links</h4>
-            <div class="mt-4 flex flex-col gap-3 text-slate-300">
-              <a href="/" class="transition hover:text-white">Home</a>
-              <a href="/about" class="transition hover:text-white">About</a>
-              <a href="/how-to-order" class="transition hover:text-white">How to Order</a>
-              <a href="/articles" class="transition hover:text-white">Articles</a>
-              <a href="/contact" class="transition hover:text-white">Contact</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-12 border-t border-white/10 pt-6 text-sm text-slate-400">
-          © 2026 Fastlane Synthetics. Independent AMSOIL Dealer.
         </div>
       </div>
     </section>

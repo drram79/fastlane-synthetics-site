@@ -4,7 +4,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 ---
 
 <Layout
-  title="Contact | Fastlane Synthetics" 
+  title="Contact | Fastlane Synthetics"
   description="Contact Fastlane Synthetics for AMSOIL product guidance and support."
 >
   <main class="min-h-screen bg-white text-slate-900">
@@ -26,16 +26,38 @@ import SiteHeader from '../components/SiteHeader.astro';
 
         <div class="mt-12 max-w-3xl">
           <form
-            action="https://formspree.io/f/xaqgaldq"
+            action="https://api.web3forms.com/submit"
             method="POST"
             class="grid gap-6 md:grid-cols-2"
           >
             <input
               type="hidden"
-              name="_subject"
+              name="access_key"
+              value="c0fab517-e35c-4a09-9cdc-e825ff12457c"
+            />
+            <input
+              type="hidden"
+              name="subject"
               value="New Fastlane Synthetics contact form submission"
             />
-            <input type="hidden" name="_next" value="/contact?sent=1" />
+            <input
+              type="hidden"
+              name="from_name"
+              value="Fastlane Synthetics Contact Form"
+            />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://fastlanesynthetics.com/contact?sent=1"
+            />
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display:none"
+              tabindex="-1"
+              autocomplete="off"
+            />
 
             <div>
               <label for="name" class="mb-2 block text-sm font-bold text-slate-900">
@@ -56,7 +78,7 @@ import SiteHeader from '../components/SiteHeader.astro';
               </label>
               <input
                 id="email"
-                name="_replyto"
+                name="email"
                 type="email"
                 required
                 class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#005baa]"

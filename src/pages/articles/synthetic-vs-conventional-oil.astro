@@ -1,60 +1,366 @@
 ---
+import Layout from '../../layouts/Layout.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+
 const pageTitle =
   "Synthetic vs Conventional Oil: Which One Is Better for Your Engine? | Fastlane Synthetics";
 const pageDescription =
-  "A plain‑English look at synthetic vs conventional oil — the real differences, the common myths, and how to choose.";
+  "A plain-English look at synthetic vs conventional oil — the real differences, the common myths, and how to choose.";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content={pageDescription} />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{pageTitle}</title>
-  </head>
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="min-h-screen bg-slate-100 text-slate-900">
+    <SiteHeader currentPath="/articles" />
 
-  <body class="bg-slate-100 text-slate-900">
-    <main class="min-h-screen">
-      <section class="border-b border-slate-200 bg-white">
-        <div class="mx-auto max-w-5xl px-6 py-16 md:px-8 md:py-20">
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto max-w-5xl px-6 py-16 md:px-8 md:py-20">
+        <a
+          href="/articles/"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-red-700 transition hover:text-red-800"
+        >
+          ← Back to Articles
+        </a>
 
-          <!-- This stays here -->
-          <a
-            href="/articles/"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-red-700 transition hover:text-red-800"
+        <div class="mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm md:p-10">
+          <span
+            class="inline-flex rounded-full bg-red-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-red-700"
           >
-            ← Back to Articles
-          </a>
+            Product Guides
+          </span>
 
-          <!-- Intro card -->
-          <div
-            class="mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm md:p-10"
-          >
-            <span
-              class="inline-flex rounded-full bg-red-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-red-700"
-            >
-              Product Guides
-            </span>
+          <h1 class="mt-5 max-w-3xl text-4xl font-black tracking-tight text-slate-900 md:text-5xl">
+            Synthetic vs Conventional Oil: Which One Is Better for Your Engine?
+          </h1>
 
-            <h1
-              class="mt-5 max-w-3xl text-4xl font-black tracking-tight text-slate-900 md:text-5xl"
-            >
-              Synthetic vs Conventional Oil: Which One Is Better for Your Engine?
-            </h1>
+          <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-700">
+            Everyone has an opinion — friends, mechanics, quick-lube shops, online forums.
+            This guide cuts through that noise and focuses on what actually changes under
+            the hood.
+          </p>
 
-            <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-700">
-              Everyone has an opinion — friends, mechanics, quick‑lube shops, online forums.
-              This guide cuts through that noise and focuses on what actually changes under
-              the hood.
+          <dl class="mt-6 grid gap-4 text-sm font-semibold text-slate-600 md:grid-cols-3">
+            <div>
+              <dt class="text-xs uppercase tracking-[0.18em] text-slate-500">
+                Estimated reading time
+              </dt>
+              <dd class="mt-1">7 minutes</dd>
+            </div>
+
+            <div>
+              <dt class="text-xs uppercase tracking-[0.18em] text-slate-500">
+                Category
+              </dt>
+              <dd class="mt-1">Motor Oil Basics</dd>
+            </div>
+
+            <div>
+              <dt class="text-xs uppercase tracking-[0.18em] text-slate-500">
+                Updated
+              </dt>
+              <dd class="mt-1">2026</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="mx-auto mt-10 max-w-2xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+          <img
+            src="/ArticleFullSynthetic1.png"
+            alt="Full synthetic motor oil being poured into an engine"
+            class="h-auto w-full"
+          />
+          <figcaption class="border-t border-slate-200 bg-slate-50 px-5 py-4 text-sm leading-6 text-slate-600">
+            Full synthetic oil is engineered to handle heat, cold starts, and day-to-day
+            driving stress better than conventional oil when it matches the right grade
+            and spec.
+          </figcaption>
+        </figure>
+
+        <div class="mt-14 space-y-14">
+          <section>
+            <h2 class="text-3xl font-black tracking-tight text-slate-900">
+              The short version
+            </h2>
+            <div class="mt-5 space-y-5 text-lg leading-8 text-slate-700">
+              <p>
+                In most cases, synthetic oil offers better protection, better performance
+                in extreme temperatures, and better long-term stability than conventional
+                oil. That does not mean conventional oil is automatically wrong for every
+                vehicle — but synthetic has real advantages that matter in everyday
+                driving.
+              </p>
+              <p>
+                The real goal is not just choosing between “synthetic” and “regular.” It
+                is using an oil that matches your vehicle’s required viscosity and
+                specification while also fitting how you drive and how long you plan to
+                keep the vehicle.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-3xl font-black tracking-tight text-slate-900">
+              What is conventional oil?
+            </h2>
+            <div class="mt-5 space-y-5 text-lg leading-8 text-slate-700">
+              <p>
+                Conventional oil is the more traditional form of motor oil. It is refined
+                from crude oil and has been used in engines for decades. For some
+                vehicles, especially older ones, it may still be an acceptable option if
+                it meets the correct viscosity grade and manufacturer requirements.
+              </p>
+              <p>
+                For drivers who do lighter driving, shorter ownership cycles, or simply
+                want the lowest upfront oil cost, conventional oil can still seem
+                appealing. But when people compare the two, the main question is usually
+                not whether conventional oil works at all — it is whether synthetic
+                offers better protection and performance.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-3xl font-black tracking-tight text-slate-900">
+              What is synthetic oil?
+            </h2>
+            <div class="mt-5 space-y-5 text-lg leading-8 text-slate-700">
+              <p>
+                Synthetic oil is engineered to perform more consistently than
+                conventional oil. Its base oils and formulation are designed to provide
+                stronger resistance to heat, better cold-temperature flow, and improved
+                protection against deposits and breakdown.
+              </p>
+              <p>
+                In simple terms, synthetic oil is built to handle stress better. That
+                matters because modern engines run hotter, many drivers spend time in
+                stop-and-go traffic, and some vehicles are regularly used for towing,
+                hauling, or longer drain intervals.
+              </p>
+              <p>
+                This is one reason many newer vehicles either recommend or require
+                synthetic oil from the start. Even where it is not strictly required,
+                many drivers choose it for the added margin of protection.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-3xl font-black tracking-tight text-slate-900">
+              Where the differences really show up
+            </h2>
+
+            <div class="mt-6 grid gap-5 md:grid-cols-2">
+              <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 class="text-xl font-black text-slate-900">Cold-start flow</h3>
+                <p class="mt-3 text-base leading-7 text-slate-700">
+                  Better cold-flow means oil reaches critical engine parts more quickly
+                  at startup — one of the most important moments for engine protection,
+                  especially if the vehicle sits overnight in colder weather.
+                </p>
+              </article>
+
+              <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 class="text-xl font-black text-slate-900">Heat resistance</h3>
+                <p class="mt-3 text-base leading-7 text-slate-700">
+                  Synthetic oil resists breakdown under high heat — long highway trips,
+                  summer driving, towing, and performance driving all push temperatures
+                  up. Conventional oil can do the job, but synthetic tends to hold its
+                  protection more consistently.
+                </p>
+              </article>
+
+              <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 class="text-xl font-black text-slate-900">Engine cleanliness</h3>
+                <p class="mt-3 text-base leading-7 text-slate-700">
+                  Synthetic oil generally does a better job resisting sludge and deposit
+                  formation, which matters in modern engines built with tighter
+                  tolerances that ask more of the oil than simple lubrication.
+                </p>
+              </article>
+
+              <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 class="text-xl font-black text-slate-900">Long-term stability</h3>
+                <p class="mt-3 text-base leading-7 text-slate-700">
+                  Synthetic oil typically resists oxidation and viscosity breakdown
+                  longer than conventional oil, giving more confidence that the oil is
+                  still protecting the engine as miles accumulate.
+                </p>
+              </article>
+            </div>
+
+            <div class="mt-8 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 text-base leading-7 text-slate-700">
+              <span class="font-semibold text-slate-900">Bottom line:</span> synthetic
+              usually wins the comparison in everyday conditions — but “synthetic”
+              alone is not the finish line. It still has to be the right viscosity and
+              specification for your engine.
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-3xl font-black tracking-tight text-slate-900">
+              Is synthetic oil always better?
+            </h2>
+            <div class="mt-5 space-y-5 text-lg leading-8 text-slate-700">
+              <p>
+                In many real-world situations, synthetic oil is the stronger option —
+                especially for newer engines, extreme hot or cold temperatures, towing,
+                heavier use, stop-and-go commuting, and drivers who simply want a higher
+                level of engine protection.
+              </p>
+              <p>
+                That said, “better” does not mean you can ignore your owner’s manual.
+                The oil still has to match the required viscosity and performance
+                specification for your vehicle. A high-quality synthetic is only the
+                right choice if it is also the right grade and spec for the engine.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-3xl font-black tracking-tight text-slate-900">
+              When conventional oil may still be acceptable
+            </h2>
+            <div class="mt-5 space-y-5 text-lg leading-8 text-slate-700">
+              <p>
+                Conventional oil may still be acceptable in some vehicles if it matches
+                the required grade and specification and the vehicle is not used in
+                especially demanding conditions. For some older engines or
+                budget-conscious owners, it may remain a workable option.
+              </p>
+              <p>
+                Still, it helps to look beyond the bottle price. The cheaper option at
+                purchase is not always the better value once you factor in engine
+                cleanliness, temperature performance, wear protection, and how long you
+                plan to keep the vehicle.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-3xl font-black tracking-tight text-slate-900">
+              Common synthetic oil myths
+            </h2>
+            <p class="mt-5 text-lg leading-8 text-slate-700">
+              A lot of confusion about motor oil comes from myths that have been
+              repeated for years — some based on older information, some never really
+              true to begin with.
             </p>
-          </div>
 
-          <!-- image and article body stay the same -->
+            <div class="mt-8 space-y-6">
+              <article class="border-t border-slate-200 pt-6 text-base leading-7 text-slate-700 first:border-none first:pt-0">
+                <p class="font-semibold text-slate-900">
+                  Myth: I need to flush my engine before switching to synthetic oil.
+                </p>
+                <p class="mt-2">
+                  In most cases, no special preparation is needed. Synthetic and
+                  conventional oils are compatible and can even be mixed, though mixing
+                  may reduce some of the full benefit of a high-quality synthetic.
+                </p>
+              </article>
+
+              <article class="border-t border-slate-200 pt-6 text-base leading-7 text-slate-700">
+                <p class="font-semibold text-slate-900">
+                  Myth: Synthetic oil damages seals.
+                </p>
+                <p class="mt-2">
+                  Synthetic oil does not automatically damage seals — quality
+                  synthetics are formulated to help keep seals in good condition. A
+                  leak that appears after switching was often already there in a worn
+                  or dirty area; the switch just made it more noticeable.
+                </p>
+              </article>
+
+              <article class="border-t border-slate-200 pt-6 text-base leading-7 text-slate-700">
+                <p class="font-semibold text-slate-900">
+                  Myth: Synthetic oil is too thin to stay in the engine.
+                </p>
+                <p class="mt-2">
+                  Not true. An oil labeled 5W-30 or 10W-30 has to meet viscosity
+                  requirements for that grade. Synthetic flows better cold, but that
+                  does not make it “too thin” — it often holds protection better under
+                  high heat than conventional oil does.
+                </p>
+              </article>
+
+              <article class="border-t border-slate-200 pt-6 text-base leading-7 text-slate-700">
+                <p class="font-semibold text-slate-900">
+                  Myth: Synthetic oil causes cars to use more oil.
+                </p>
+                <p class="mt-2">
+                  A healthy engine should not suddenly start consuming oil just because
+                  you switched to synthetic. If an engine already leaks or burns oil,
+                  that condition exists regardless of oil type — and many drivers find
+                  synthetic performs more consistently over time.
+                </p>
+              </article>
+
+              <article class="border-t border-slate-200 pt-6 text-base leading-7 text-slate-700">
+                <p class="font-semibold text-slate-900">
+                  Myth: Synthetic oil voids warranties.
+                </p>
+                <p class="mt-2">
+                  Using synthetic oil does not automatically void a warranty. What
+                  matters is meeting the viscosity and performance requirements your
+                  manufacturer specifies. Some manufacturers even use synthetic as
+                  factory fill.
+                </p>
+              </article>
+
+              <article class="border-t border-slate-200 pt-6 text-base leading-7 text-slate-700">
+                <p class="font-semibold text-slate-900">
+                  Myth: Synthetic oil lasts forever.
+                </p>
+                <p class="mt-2">
+                  It does not. Synthetic can outperform conventional and often
+                  maintains protection longer, but additives still wear out, and
+                  contamination, fuel dilution, and real-world conditions still affect
+                  oil life. It still makes sense to follow a sensible maintenance
+                  interval.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-3xl font-black tracking-tight text-slate-900">
+              Not all synthetic oils are the same
+            </h2>
+            <div class="mt-5 space-y-5 text-lg leading-8 text-slate-700">
+              <p>
+                It is worth knowing that not all synthetic oils are created equal.
+                Formulation matters, and the quality of the base oils and additive
+                package can make a real difference in performance, durability, and
+                protection.
+              </p>
+              <p>
+                In other words, “synthetic” on the label does not automatically tell the
+                full story — product quality can still vary from one brand or product
+                line to another.
+              </p>
+            </div>
+          </section>
 
           <section class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:p-10">
             <h2 class="text-3xl font-black tracking-tight text-slate-900">
               The practical takeaway
             </h2>
+            <div class="mt-5 space-y-5 text-lg leading-8 text-slate-700">
+              <p>
+                If your goal is stronger engine protection, better performance in hot
+                and cold temperatures, and better long-term stability, synthetic oil is
+                usually the better choice for many modern vehicles and real-world
+                driving conditions.
+              </p>
+              <p>
+                Conventional oil may still be acceptable in some situations, but for
+                drivers who want an extra margin of protection and better resistance to
+                heat, deposits, and breakdown, synthetic is hard to ignore.
+              </p>
+              <p>
+                The smartest move is to start with your owner’s manual, confirm the
+                correct viscosity and specification, and then choose a quality product
+                that matches both your vehicle and your driving conditions.
+              </p>
+            </div>
 
             <div class="mt-8 flex flex-wrap gap-4">
               <a
@@ -64,7 +370,6 @@ const pageDescription =
                 Learn How to Order
               </a>
 
-              <!-- This also stays here -->
               <a
                 href="/articles/"
                 class="inline-flex items-center justify-center rounded-full border border-blue-200 bg-blue-50 px-6 py-3 text-sm font-bold text-blue-800 transition hover:border-blue-300 hover:bg-blue-100"
@@ -74,7 +379,7 @@ const pageDescription =
             </div>
           </section>
         </div>
-      </section>
-    </main>
-  </body>
-</html>
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -3,40 +3,73 @@ import Layout from '../layouts/Layout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 ---
 
-
 <Layout
   title="How to Order | Fastlane Synthetics"
   description="How to order AMSOIL products through Fastlane Synthetics."
 >
   <main class="min-h-screen bg-white text-slate-900">
-   <SiteHeader currentPath="/how-to-order" />
+    <SiteHeader currentPath="/how-to-order" />
 
     <section class="relative overflow-hidden bg-slate-900">
-  <div class="absolute inset-0">
-    <img src="/AMSOIL-background1.png"
-      alt="Truck on mountain road"
-      class="h-full w-full object-cover object-center opacity-75"
-    />
-    <div class="absolute inset-0 bg-slate-950/55"></div>
-  </div>
+      <div class="absolute inset-0">
+        <img
+          src="/AMSOIL-background1.png"
+          alt="Truck on mountain road"
+          class="h-full w-full object-cover object-center opacity-75"
+        />
+        <div class="absolute inset-0 bg-slate-950/55"></div>
+      </div>
 
-  <div class="relative z-10 mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
-    <div class="max-w-4xl">
-      <p class="text-sm font-bold uppercase tracking-[0.24em] text-cyan-300">
-        How to Order
-      </p>
+      <div class="relative z-10 mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+        <div class="max-w-4xl">
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-cyan-300">
+            How to Order
+          </p>
 
-      <h1 class="mt-4 text-4xl font-black leading-tight text-white md:text-6xl">
-        A simple path to finding and ordering the right AMSOIL products.
-      </h1>
+          <h1 class="mt-4 text-4xl font-black leading-tight text-white md:text-6xl">
+            A simple path to finding and ordering the right AMSOIL products.
+          </h1>
 
-      <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-        Fastlane Synthetics helps you identify the right AMSOIL products for your vehicle,
-        motorcycle, equipment, or small fleet. Orders are completed directly through AMSOIL.
-      </p>
-    </div>
-  </div>
-</section>
+          <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
+            Fastlane Synthetics helps you identify the right AMSOIL products for your vehicle,
+            motorcycle, equipment, or small fleet. Orders are completed directly through AMSOIL.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-8 md:px-10 md:py-10">
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:p-8">
+          <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div class="max-w-3xl">
+              <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#005baa]">
+                Product Guide
+              </p>
+              <h2 class="mt-3 text-2xl font-black text-slate-900 md:text-3xl">
+                Find out what your vehicle needs
+              </h2>
+              <p class="mt-3 leading-8 text-slate-600">
+                Use the AMSOIL Product Guide to look up the right oil, filters, and fluids for your
+                vehicle or equipment before you order. AMSOIL’s guides are designed to recommend
+                products based on your application details.[web:1594][web:1596]
+              </p>
+            </div>
+
+            <div class="flex-shrink-0">
+              <a
+                href="https://www.amsoil.com/guides/?zo=5039461"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-xl bg-[#ef1c25] px-8 py-4 text-base font-bold text-white transition hover:bg-[#d8151d]"
+              >
+                Product Guide
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="bg-slate-50">
       <div class="mx-auto max-w-7xl px-6 py-16 md:px-10">
